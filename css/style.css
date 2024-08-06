@@ -1,1 +1,36 @@
+#header{
+    font-family: "Gupter";
+    margin-bottom: 2px;
+}
 
+#icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4px; 
+    font-size: 20px;   
+
+}
+
+.icon{
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+
+    font-family: "Nunito Sans";
+    font-size: 15px;
+}
