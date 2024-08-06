@@ -17,6 +17,14 @@
     text-decoration: none;
 }
 
+#projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;    
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -25,8 +33,10 @@ body{
     gap: 4px;
 }
 
-a{
+a, a:link, a:visited, a:hover, a:focus, a:active{
+    
     text-decoration: none;
+    color:black;
 }
 
 p{
