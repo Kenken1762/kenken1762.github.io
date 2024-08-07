@@ -3,20 +3,6 @@
     margin-bottom: 2px;
 }
 
-#icons{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 4px; 
-    font-size: 20px;   
-
-}
-
-.icon{
-    text-decoration: none;
-}
-
 #projects{
     display: flex;
     flex-direction: column;
@@ -25,22 +11,52 @@
     gap: 4px;    
 }
 
-body{
+.header{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 4px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Fixed minimum width and wrap to next row */
+    grid-auto-rows: 1fr;
+    gap: 5vw; /* Gap between grid items based on viewport width */
+    width: 100%;
+    padding: 10px; /* Optional padding */
+    box-sizing: border-box;
+  }
+  
+  /* Grid item */
+  .grid-item {
+    font-family: Nunito Sans;
+    text-align: center;
+    background-color: lightblue;
+    width: 100%;
+    aspect-ratio: 1; /* Ensures the items are square */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em; /* Example styling */
+  }
+  
+
+body{
+
 }
 
 a, a:link, a:visited, a:hover, a:focus, a:active{
-    
+    font-family: "Nunito Sans";
     text-decoration: none;
     color:black;
 }
 
 p{
-
     font-family: "Nunito Sans";
     font-size: 15px;
 }
