@@ -1,9 +1,4 @@
-#header{
-    font-family: "Gupter";
-    margin-bottom: 2px;
-}
-
-#projects{
+#projects {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,17 +6,6 @@
     gap: 4px;    
 }
 
-.header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    margin-left: 10vw;
-    margin-right: 10vw;
-}
-
-/* Grid container */
 /* Grid container */
 .grid-container {
     display: grid;
@@ -29,24 +13,24 @@
     justify-content: center; /* Center the items in the container */
     padding: 10px; /* Optional padding */
     box-sizing: border-box;
-  }
-  
-  /* Media query for screens wider than 800px (adjust as needed) */
-  @media (min-width: 800px) {
+}
+
+/* Media query for screens wider than 800px (adjust as needed) */
+@media (min-width: 800px) {
     .grid-container {
-      grid-template-columns: repeat(4, 1fr); /* Max 4 columns */
+        grid-template-columns: repeat(4, 1fr); /* Max 4 columns */
     }
-  }
-  
-  /* Media query for screens narrower than 800px */
-  @media (max-width: 799px) {
+}
+
+/* Media query for screens narrower than 800px */
+@media (max-width: 799px) {
     .grid-container {
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Wrap items as needed */
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Wrap items as needed */
     }
-  }
-  
-  /* Grid item */
-  .grid-item {
+}
+
+/* Grid item */
+.grid-item {
     background-color: lightblue;
     position: relative; /* For positioning the overlay */
     aspect-ratio: 1; /* Ensures the items are square */
@@ -55,10 +39,13 @@
     justify-content: center;
     font-size: 2em; /* Example styling */
     overflow: hidden; /* Hide overflow to ensure the overlay doesn't spill out */
-  }
-  
-  /* Overlay */
-  .grid-item::before {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Overlay */
+.grid-item::before {
     content: '';
     position: absolute;
     top: 100%;
@@ -67,14 +54,14 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Transparent grey overlay */
     transition: top 0.3s; /* Slide-up effect */
-  }
-  
-  /* Hover effect */
-  .grid-item:hover::before {
+}
+
+/* Hover effect */
+.grid-item:hover::before {
     top: 0;
-  }
-  
- /* Overlay content */
+}
+
+/* Overlay content */
 .overlay-content {
     position: absolute;
     top: 100%;
@@ -91,39 +78,137 @@
     pointer-events: none; /* Ensure overlay content doesn't interfere with hover */
     box-sizing: border-box;
     text-align: center;
-  }
-  
-  /* Hover effect for content */
-  .grid-item:hover .overlay-content {
+}
+
+/* Hover effect for content */
+.grid-item:hover .overlay-content {
     top: 0;
-  }
-  
-  /* Overlay header */
-  .overlay-header {
+}
+
+/* Overlay header */
+.overlay-header {
     font-size: 1.5em; /* Larger font size for header */
     margin-bottom: 5px; /* Space between header and body */
     font-family: "Gupter";
     text-align: center;
     width: 100%;
     color: #FAF9F6;
-  }
-  
-  /* Overlay body */
-  .overlay-body {
+}
+
+/* Overlay body */
+.overlay-body {
     font-size: 1vw; /* Font size for body text */
     width: 100%;
     text-align: center;
     font-family: "Nunito Sans";
     color: #FAF9F6;
-  }
-
-a, a:link, a:visited, a:hover, a:focus, a:active{
-    font-family: "Nunito Sans";
-    text-decoration: none;
-    color:black;
 }
 
-p{
+a, a:link, a:visited, a:hover, a:focus, a:active {
+    font-family: "Nunito Sans";
+    text-decoration: none;
+    color: black;
+}
+
+p {
     font-family: "Nunito Sans";
     font-size: 15px;
+}
+
+/* Profile Section */
+.profile-container {
+    font-family: "Gupter";
+    margin: 0 1vw; /* Adjusts the margin to be 5% of the viewport width on both sides */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    margin-top: 1.5vw;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    min-height: 95vh;
+}
+
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.profile-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.profile-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.profile-nav a:hover {
+    background-color: #f0f0f0;
+}
+
+.profile-biography {
+    margin-bottom: 20px;
+}
+
+.profile-biography h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.profile-interests-education {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.profile-interests, .profile-education {
+    flex: 1;
+}
+
+.profile-interests h2, .profile-education h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.profile-interests ul, .profile-education ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.profile-interests li, .profile-education li {
+    margin-bottom: 10px;
+    font-family: "Nunito Sans";
+}
+
+.profile-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.profile-icons a {
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.profile-icons a:hover {
+    color: #007BFF;
 }
