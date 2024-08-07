@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head style="background-color: rgb(179, 172, 164);">
+<head style="background-color: #D4D4D4;">
   <meta charset="utf-8">
   <title>Kenny Nguyen</title>
   <meta name="author" content="">
@@ -13,83 +13,119 @@
   <link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
 </head>
 
-<body style="background-color: rgb(179, 172, 164);">
+<body style="background-color: #D4D4D4;">
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="navbar-item"><a href="#home" id="home-link">ABOUT ME</a></li>
+            <li class="navbar-item"><a href="#skills" id="skills-link">SKILLS</a></li>
+            <li class="navbar-item"><a href="#projects-header" class="projects-button" id="projects-link">PROJECTS</a></li>
+            <li class="navbar-item"><a href="#contact-me" id="contact-link">CONTACT ME</a></li>
+        </ul>
+    </nav>    
     <!-- New Profile Section -->
-    <div class="profile-container">
+    <div class="profile-container" id="home">
         <header class="profile-header">
             <!-- ADD PICTURE HERE -->
             <img src="profile.jpeg" alt="Profile Picture" class="profile-pic">
-            <h1>Hello, World! I'm Kenny Nguyen. THIS PAGE IS A WIP</h1>
-            <p>Kenken1762@gmail.com | linkedin.com/in/kennynguyen | https://github.com/Kenken1762| (281)-966-8078</p>
-        </header>
-
-        <nav class="profile-nav">
-            <a href="#">Home</a>
-            <a href="#">Posts</a>
-            <a href="#">Projects</a>
-            <a href="#">Publications</a>
-            <a href="#">Resume</a>
-            <a href="#">Contact</a>
-        </nav>
+            <h1>Hello, World! My name is Kenny Nguyen.</h1>
+            </header>
 
         <div class="profile-biography">
             <div>
-                <h2>Biography</h2>
-                <p>Kenny Nguyen is a third year student in the College of Natural Science
-                    at the University of Texas at Austin. He has a major in Computer Science
-                    and a minor in Philosophy. 
-                    <!-- MORE ABOUT MYSELF HERE -->
+                <h2>A little bit about myself...</h2>
+                <p>Hey, this is Kenny Nguyen. I am a third-year student 
+                    at the University of Texas at Austin, majoring in Computer 
+                    Science with a minor in Philosophy. I'm from Houston, Texas, 
+                    and I am currently searching for an internship that will allow 
+                    me to demonstrate my skills while providing opportunities to 
+                    learn. Besides my interest in computer science, I have a variety
+                     of hobbies. I enjoy playing volleyball, bouldering, reading, 
+                     and becoming overly knowledgeable about niche (and arguably 
+                     useless) topics. (Please ask me about them if you want to waste
+                     a few hours of your life!)
                     </p>
             </div>
-        </div>
+            <div class="button-container">
 
-        <div class="profile-interests-education">
-            <div class="profile-interests">
-                <h2>Interests</h2>
-                <ul>
-                    <li>Network Operating Systems</li>
-                    <li>Machine Learning and AI</li>
-                    <li>Computer Vision</li>
-                    <li>Philosophy</li>
-                </ul>
             </div>
-
-            <div class="profile-education">
-                <h2>Education</h2>
-                <ul>
-                    <li>BS in Computer Science, Current<br>University of Texas at Austin</li>
-                    <li>High School Diploma, 2022<br>Cypress Creek High School</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="profile-icons">
-            <a href="#"><i class="fas fa-envelope"></i></a>
-            <a href="#"><i class="fas fa-twitter"></i></a>
-            <a href="#"><i class="fas fa-github"></i></a>
-            <a href="#"><i class="fas fa-linkedin"></i></a>
-            <a href="#"><i class="fas fa-file-alt"></i></a>
+            <button onclick="window.open('https://github.com/Kenken1762', '_blank')">GitHub</button>
+            <button onclick="window.open('resume.pdf', '_blank')">Resume</button>
+          
         </div>
     </div>
 
-    <div class="grid-container">
-        <div class="grid-item">
-            <!-- if u want text in the original box it goes here -->
-            <div class="overlay-content">
-                <div class="overlay-header">Friendly Faces</div>
-                <div class="overlay-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod sint provident nam hic exercitationem harum veniam assumenda, ipsum expedita molestiae nobis, placeat laudantium magnam nemo doloribus vero? Quia, numquam possimus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque illo quibusdam quo error cupiditate voluptates nostrum ducimus provident impedit, necessitatibus tempora ullam asperiores, neque ratione molestiae ea cum rem ut! Lorem</div>
-            </div>
-        </div>
-        <div class="grid-item">PhilosoMe</div>
-        <div class="grid-item">inKey</div>
-        <div class="grid-item">Telly's Adventure</div>
-        <div class="grid-item"></div>
-        <div class="grid-item">Todo List</div>
-        <div class="grid-item">RGB Color Game</div>
-        <div class="grid-item">Patatap</div>
-    </div>  
+    <div id="skills" style="min-height: 95vh;">
+        <h2>Skills</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eius dignissimos voluptatibus? Quam magnam rerum soluta quaerat. Quidem quia ipsa quos voluptas, suscipit eaque perferendis tenetur officia placeat ut eos!</p>
+        <!-- Skills content here -->
+    </div>
 
-    <script src="js/script.js"></script>
+    <div id="projects-header" style="min-height: 95vh; background-color: #f0f0f0;">
+        <h2  class="projects-header">My Projects</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <!-- if u want text in the original box it goes here -->
+                <div class="overlay-content">
+                    <div class="overlay-header">Friendly Faces</div>
+                    <div class="overlay-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod sint provident nam hic exercitationem harum veniam assumenda, ipsum expedita molestiae nobis, placeat laudantium magnam nemo doloribus vero? Quia, numquam possimus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque illo quibusdam quo error cupiditate voluptates nostrum ducimus provident impedit, necessitatibus tempora ullam asperiores, neque ratione molestiae ea cum rem ut! Lorem</div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <!-- if u want text in the original box it goes here -->
+                <div class="overlay-content">
+                    <div class="overlay-header">PhilosoMe</div>
+                    <div class="overlay-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod sint provident nam hic exercitationem harum veniam assumenda, ipsum expedita molestiae nobis, placeat laudantium magnam nemo doloribus vero? Quia, numquam possimus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque illo quibusdam quo error cupiditate voluptates nostrum ducimus provident impedit, necessitatibus tempora ullam asperiores, neque ratione molestiae ea cum rem ut! Lorem</div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <!-- if u want text in the original box it goes here -->
+                <div class="overlay-content">
+                    <div class="overlay-header">Telly's Adventure</div>
+                    <div class="overlay-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod sint provident nam hic exercitationem harum veniam assumenda, ipsum expedita molestiae nobis, placeat laudantium magnam nemo doloribus vero? Quia, numquam possimus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque illo quibusdam quo error cupiditate voluptates nostrum ducimus provident impedit, necessitatibus tempora ullam asperiores, neque ratione molestiae ea cum rem ut! Lorem</div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <!-- if u want text in the original box it goes here -->
+                <div class="overlay-content">
+                    <div class="overlay-header">inKey</div>
+                    <div class="overlay-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod sint provident nam hic exercitationem harum veniam assumenda, ipsum expedita molestiae nobis, placeat laudantium magnam nemo doloribus vero? Quia, numquam possimus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque illo quibusdam quo error cupiditate voluptates nostrum ducimus provident impedit, necessitatibus tempora ullam asperiores, neque ratione molestiae ea cum rem ut! Lorem</div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <div id="contact-me" style="min-height: 95vh;">
+        <h2>Let's Connect!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eius laboriosam, iure quam illo porro, reiciendis praesentium cumque quis vero adipisci? In iure ex cupiditate possimus error alias voluptates totam!</p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const sections = document.querySelectorAll('section, .profile-container, #skills, #projects-header, #contact-me');
+          const navItems = document.querySelectorAll('.navbar-item a');
+
+          window.addEventListener('scroll', function() {
+            let currentSection = '';
+
+            sections.forEach(section => {
+              const sectionTop = section.offsetTop;
+              const sectionHeight = section.clientHeight;
+
+              if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                currentSection = section.getAttribute('id');
+              }
+            });
+
+            navItems.forEach(item => {
+              item.classList.remove('scrolled');
+              if (item.getAttribute('href').substring(1) === currentSection) {
+                item.classList.add('scrolled');
+              }
+            });
+          });
+        });
+    </script>
+      
 </body>
 
 </html>
